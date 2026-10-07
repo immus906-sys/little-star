@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17142e">
+  <meta name="description" content="A little star, one month of love — a celebration made for our family.">
+  <title>Our Little Star — One Month of Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="site-tools">
+    <div class="progress" aria-label="Story progress">
+      <span class="progress__step is-current" data-step="1">✦ <span>1</span></span>
+      <span class="progress__line"></span>
+      <span class="progress__step" data-step="2">✦ <span>2</span></span>
+      <span class="progress__line"></span>
+      <span class="progress__step" data-step="3">✦ <span>3</span></span>
+      <span class="progress__line"></span>
+      <span class="progress__step" data-step="4">✦ <span>4</span></span>
+    </div>
+    <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false">
+      <span class="music-toggle__icon" aria-hidden="true">♫</span>
+      <span id="music-label">Music Off</span>
+    </button>
+    <p class="music-status" id="music-status" aria-live="polite"></p>
+  </header>
+  <audio id="lullaby" src="assets/lullaby.mp3" loop preload="none"></audio>
+
+  <main>
+    <section class="scene scene--welcome is-active" id="welcome-scene" aria-labelledby="welcome-title">
+      <div class="sky-decor sky-decor--welcome" aria-hidden="true">
+        <span class="moon"></span>
+        <span class="cloud cloud--one"></span>
+        <span class="cloud cloud--two"></span>
+        <span class="shooting-star"></span>
+      </div>
+      <div class="welcome-content">
+        <p class="eyebrow">A little wonder has arrived</p>
+        <h1 id="welcome-title">Something Special<br>For Our Little Star <span>✧</span></h1>
+        <p class="welcome-subtitle">One Month of Love</p>
+        <button class="gift-button" id="open-gift" type="button" aria-label="Open your surprise">
+          <span class="gift" aria-hidden="true">
+            <span class="gift__glow"></span>
+            <span class="gift__lid"><span class="gift__bow"></span></span>
+            <span class="gift__box"><span class="gift__ribbon"></span></span>
+            <span class="gift__light"></span>
+          </span>
+          <span class="gift-button__label">Open Your Surprise <span aria-hidden="true">🎁</span></span>
+        </button>
+        <p class="welcome-note">Made with all our love, just for you</p>
+      </div>
+      <div class="transition-burst" id="gift-burst" aria-hidden="true"></div>
+    </section>
+
+    <section class="scene scene--photos" id="photos-scene" aria-labelledby="photos-title" aria-hidden="true">
+      <div class="scene__inner photos-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The beginning of forever</p>
+          <h2 id="photos-title">And Then... Our Little Star Arrived <span>✧</span></h2>
+          <p>One tiny girl, one big happiness, one month of unforgettable love.</p>
+        </div>
+        <div class="photo-grid">
+          <article class="photo-card photo-card--one reveal">
+            <div class="photo-card__image">
+              <div class="photo-placeholder photo-placeholder--portrait" aria-hidden="true">
+                <span class="placeholder-moon">☾</span><span class="placeholder-star">✦</span>
+                <span class="placeholder-baby">♡</span><span class="placeholder-caption">your photo<br>goes here</span>
+              </div>
+              <img src="C:\Users\shaik Imamsa\Downloads\2ecbd45b-eb4f-4326-a138-a3cfd19ce487.png" alt="A portrait of our little princess" loading="lazy">
+              <span class="photo-card__sparkle" aria-hidden="true">✧</span>
+            </div>
+            <div class="photo-card__caption"><span>01</span><h3>Our Little Princess <b>👑</b></h3></div>
+          </article>
+          <article class="photo-card photo-card--two reveal">
+            <div class="photo-card__image">
+              <div class="photo-placeholder photo-placeholder--sleep" aria-hidden="true">
+                <span class="placeholder-moon">☾</span><span class="placeholder-star">✧</span>
+                <span class="placeholder-baby placeholder-baby--sleep">♡</span><span class="placeholder-caption">your photo<br>goes here</span>
+              </div>
+              <img src="C:\Users\shaik Imamsa\Downloads\3a65bfee-733a-4228-b29a-93b95cc93215.png" alt="Our baby girl sleeping or smiling" loading="lazy">
+              <span class="photo-card__sparkle" aria-hidden="true">✧</span>
+            </div>
+            <div class="photo-card__caption"><span>02</span><h3>One Month of Pure Love <b>💕</b></h3></div>
+          </article>
+          <article class="photo-card photo-card--three reveal">
+            <div class="photo-card__image">
+              <div class="photo-placeholder photo-placeholder--mother" aria-hidden="true">
+                <span class="placeholder-star">✦</span><span class="placeholder-mother">♡</span>
+                <span class="placeholder-caption">your photo<br>goes here</span>
+              </div>
+              <img src="C:\Users\shaik Imamsa\Downloads\eef44950-a097-4af5-9f1e-18b169714e83.png" alt="A mother holding her baby" loading="lazy">
+              <span class="photo-card__sparkle" aria-hidden="true">✧</span>
+            </div>
+            <div class="photo-card__caption"><span>03</span><h3>A Mother's Greatest Blessing <b>❤️</b></h3></div>
+          </article>
+        </div>
+        <div class="center-action reveal">
+          <button class="button button--primary" id="to-message" type="button">There Is One More Surprise <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+      <div class="petals petals--photos" aria-hidden="true"></div>
+    </section>
+
+    <section class="scene scene--message" id="message-scene" aria-labelledby="message-title" aria-hidden="true">
+      <div class="scene__inner message-inner">
+        <div class="message-sky" aria-hidden="true">
+          <span class="message-moon">☾</span><span class="message-cloud message-cloud--left"></span>
+          <span class="message-cloud message-cloud--right"></span><span class="butterfly butterfly--one">✧</span>
+          <span class="butterfly butterfly--two">✿</span>
+        </div>
+        <div class="message-copy">
+          <p class="eyebrow reveal">A whole new world began</p>
+          <h2 id="message-title" class="message-count reveal">One Month<span>...</span></h2>
+          <p class="message-line reveal">And already, you have changed our world.</p>
+          <p class="message-celebration reveal">Happy 1 Month birthday,<br><em>Little Princess!</em> <span>💕</span></p>
+          <div class="center-action reveal">
+            <button class="button button--light" id="to-letter" type="button">A little message from My side <span aria-hidden="true">↓</span></button>
+          </div>
+        </div>
+        <div class="message-flower message-flower--left" aria-hidden="true">✿</div>
+        <div class="message-flower message-flower--right" aria-hidden="true">✿</div>
+      </div>
+    </section>
+
+    <section class="scene scene--letter" id="letter-scene" aria-labelledby="letter-title" aria-hidden="true">
+      <div class="scene__inner letter-inner">
+        <div class="letter-card">
+          <div class="letter-card__stamp" aria-hidden="true">♡</div>
+          <p class="eyebrow">From all of us, with love</p>
+          <h2 id="letter-title">A Little Message from Grandpa <span>💌</span></h2>
+          <div class="letter-copy">
+            <p>One month ago, our family was blessed with the arrival of a beautiful little princess, and since that day, our hearts have been filled with a happiness that words can hardly describe. ❤️</p>
+            <p>You may be tiny, my little one, but you have already filled our home with so much love, laughter, and countless precious moments.</p>
+            <p>As you grow, may your life always be surrounded by love, happiness, good health, and countless beautiful moments.</p>
+            <p>Always remember, my little princess, you are a precious blessing to family, and you will always have a very special place in Grandpa's heart. 👑❤️</p>
+            <p class="letter-signoff">Happy 1 Month, our little princess! 🎀 <span>👑💕</span></p>
+            <p class="letter-last">With all my love,
+                      Grandpa ❤️</p>
+          </div>
+          <div class="center-action">
+            <button class="button button--primary" id="to-final" type="button">One Last Surprise <span aria-hidden="true">✧</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene--final" id="final-scene" aria-labelledby="final-title" aria-hidden="true">
+      <div class="final-sky" aria-hidden="true">
+        <div class="heart-constellation" id="heart-constellation"></div>
+        <div class="final-fireworks" id="final-fireworks"></div>
+      </div>
+      <div class="final-copy">
+        <p class="eyebrow">A wish written in the stars</p>
+        <h2 id="final-title">You are our<br><em>little star</em> <span>⭐</span></h2>
+        <p class="final-wish">Happy 1 Month birthday, Princess <span>💕</span></p>
+        <p class="final-from">With all our love, from Grandpa.</p>
+        <div class="final-footer">
+          <p>Made with love &amp; a little bit of Emotion <span>💕</span></p>
+          <p class="final-signature">— From your Grandpa</p>
+          <button class="button button--replay" id="replay" type="button">Replay the Surprise <span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
